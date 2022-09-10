@@ -3,6 +3,7 @@ let gender = document.getElementById('gender');
 let age = document.getElementById('age');
 let nationality = document.getElementById('nationality');
 let dog_img = document.getElementById('dog');
+let results = document.getElementById('results');
 let dog_URL = 'https://dog.ceo/api/breeds/image/random';
 
 //Fetch a random dog picture
@@ -34,4 +35,7 @@ btn.addEventListener('click', () => {
 			nationality.innerHTML += ' ' + ResponseJson.country[1].country_id;
 		}
 	});
+
+	//Show the results
+	results.style.display = 'flex';
 });
