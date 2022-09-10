@@ -2,7 +2,15 @@ let submit = document.getElementById('btn');
 let gender = document.getElementById('gender');
 let age = document.getElementById('age');
 let nationality = document.getElementById('nationality');
+let dog_img = document.getElementById('dog');
+let dog_URL = 'https://dog.ceo/api/breeds/image/random';
 
+//Fetch a random dog picture
+fetch(dog_URL).then((Response) => Response.json()).then((ResponseJson) => {
+	dog_img.src = ResponseJson.message;
+});
+
+//Fetch the gender, age and nationality when submit button is pressed
 btn.addEventListener('click', () => {
 	var name = document.getElementById('myText').value;
 	let gender_URL = `https://api.genderize.io/?name=${name}`;
