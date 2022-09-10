@@ -10,6 +10,7 @@ body {
 	background-image: url("./images/bg2.png");
 }
 
+/*Dog picture*/
 #dog {
 	display: block;
 	width: 20vw;
@@ -21,6 +22,7 @@ body {
 	box-shadow: 2px 2px 18px #888888;
 }
 
+/*Header*/
 .header {
 	display: flex;
 	flex-direction: column;
@@ -39,6 +41,7 @@ body {
 	text-align: center;
 }
 
+/*Insert box and check button*/
 .insert {
 	display: flex;
 	flex-direction: column;
@@ -80,6 +83,7 @@ input[type="text"]:hover {
 	background-color: #888888;
 }
 
+/*Results*/
 .results {
 	width: 100%;
 	justify-content: space-evenly;
