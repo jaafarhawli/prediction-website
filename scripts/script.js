@@ -5,6 +5,21 @@ let nationality = document.getElementById('nationality');
 let dog_img = document.getElementById('dog');
 let results = document.getElementById('results');
 let dog_URL = 'https://dog.ceo/api/breeds/image/random';
+let ip_address = document.getElementById('ip');
+let ip_URL = 'https://api.ipify.org/?format=json';
+let bored_URL = 'https://www.boredapi.com/api/activity';
+
+//Used axios to access the ip-address api
+axios.get(ip_URL).then((res) => {
+	ip_address.innerHTML += res.data.ip;
+});
+
+//axios
+//	.get(bored_URL)
+//	.then((res) => {
+//		console.log(res.data.activity);
+//	})
+//	.catch((err) => console.log(err));
 
 //Fetch a random dog picture
 fetch(dog_URL).then((Response) => Response.json()).then((ResponseJson) => {

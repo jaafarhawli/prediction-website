@@ -18,8 +18,15 @@ body {
 	height: 20vw;
 	min-height: 200px;
 	border-radius: 50%;
-	margin: 6vh auto;
+	margin: 6vh auto 10px;
 	box-shadow: 2px 2px 18px #888888;
+}
+
+.ip-text {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 4vh;
 }
 
 /*Header*/
