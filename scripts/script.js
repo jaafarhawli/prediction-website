@@ -16,6 +16,7 @@ axios.get(ip_URL).then((res) => {
 	ip_address.innerHTML += res.data.ip;
 });
 
+//Used axios to access the activity api
 bored.addEventListener('click', () => {
 	axios
 		.get(bored_URL)
@@ -23,6 +24,7 @@ bored.addEventListener('click', () => {
 			bored_text.innerHTML = res.data.activity;
 		})
 		.catch((err) => console.log(err));
+	bored_text.style.display = 'block';
 });
 
 //Fetch a random dog picture
